@@ -5,5 +5,11 @@
 {% block title %}index page{% endblock %}
 
 {% block content %}
-  <h1>home page</h1>
+  <h1>Models Information</h1>
+  {% for Profile in Profile %}
+    <ul>{{Profile.Admin.admin_name }}{{Profile.Admin.admin_last_name }} </ul>
+  {% endfor %}
+    <ul>{{Profile.Admin.admin_name }}{{Profile.Admin.admin_last_name }} </ul>
+
 {% endblock %}
+

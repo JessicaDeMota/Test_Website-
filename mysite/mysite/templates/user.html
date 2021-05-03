@@ -6,10 +6,10 @@
 
 {% block content %}
   <h1>Models Information</h1>
-  {% for Profile in Profile %}
-    <ul>{{Profile.Admin.admin_name }}{{Profile.Admin.admin_last_name }} </ul>
+  {% for profile in Profiles %}
+    <ul>{{profile.admin.admin_name }}{{profile.admin.admin_last_name }} </ul>
   {% endfor %}
-    <ul>{{Profile.Admin.admin_name }}{{Profile.Admin.admin_last_name }} </ul>
+    <ul>{{Profile.admin.admin_name }}{{Profile.admin.admin_last_name }} </ul>
 
 {% endblock %}
 

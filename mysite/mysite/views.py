@@ -13,7 +13,7 @@ def user(request):
 def listing(request):
     data = {
         "Admin": Admin.objects.all(),
-        "Profile":Profile.objects.all(),
+        "Profiles":Profile.objects.all(),
     }
 
     # here we're passing the data to our template 

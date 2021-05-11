@@ -1,15 +1,14 @@
-<!-- mysite/templates/base.html -->
-
 {% load static %}
 <!DOCTYPE html>
 <html>
- <head>
-  <title>{% block title %}{% endblock %}</title>               <link href="{% static 'css/base.css' %}" rel="stylesheet"> 
- </head>
- <body>
-  <div id="content">
-   {% block content %}                                           
-   {% endblock %}
-  </div>
- </body>
+	<head>
+		<link rel="stylesheet" href={% static 'css/base.css' %} >
+	</head>
+	<body>
+		<header id="base_header"> data science </header>
+		<main class="container">
+			{% block content %}
+			{% endblock content %}
+		</main>
+	</body>
 </html>
